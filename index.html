@@ -5,10 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/bootstrap.css">
     <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
+    <title>Calculator</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <div class="all-in-one container"> <!--all-in-one container START -->
+        <div class="row"> <!-- all-in-one row START-->
+            <div class="calculator container"> <!--calculator container START-->
+                <div class="calcDisplay">
+                    <input type="number" name="display" id="calcDisplayID" readonly>
+                </div>
+                <div class="calcButtons" id="calcButtonsID">
+                    <ul class="buttWorkers">
+                        <li><button> C </button></li>
+                        <li><button> ( ) </button></li>
+                        <li><button> . </button></li>
+                        <li><button> = </button></li>
+                    </ul>
+                    <ul class = buttNums>
+                        <li><button> 1 </button></li>
+                        <li><button> 2 </button></li>
+                        <li><button> 3 </button></li>
+                        <li><button> 4 </button></li>
+                        <li><button> 5 </button></li>
+                        <li><button> 6 </button></li>
+                        <li><button> 7 </button></li>
+                        <li><button> 8 </button></li>
+                        <li><button> 9 </button></li>
+                        <li><button> 0 </button></li>
+                    </ul>
+                    <ul class="buttOpps">
+                        <li><button> + </button></li>
+                        <li><button> - </button></li>
+                        <li><button> * </button></li>
+                        <li><button> / </button></li>
+                    </ul>
+                </div> <!--calcButtons END-->
+            </div> <!--calculator container END-->
+        </div> <!--all-in-one row END -->
+    </div> <!--all-in-one container END -->
 </body>
 <script type="text/javascript" src="apps.js"></script>
 </html>

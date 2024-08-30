@@ -1,3 +1,4 @@
-h1{
+.calcButtons ul li {
+    list-style-type: none;
     background-color: pink;
 }
