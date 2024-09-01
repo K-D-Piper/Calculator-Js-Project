@@ -12,17 +12,20 @@
         <div class="row"> <!-- all-in-one row START-->
             <div class="calculator container"> <!--calculator container START-->
                 <div class="calcDisplay">
-                    <input type="number" name="display" id="calcDisplayID" readonly>
+                    <input type="number" name="calcdisplay" id="calcDisplayID" readonly>
                 </div>
                 <div class="calcButtons" id="calcButtonsID">
-                    <ul class="buttWorkers">
+                    <!--Testing Below--> 
+                   <ul class="buttWorkers">
                         <li><button> C </button></li>
                         <li><button> ( ) </button></li>
                         <li><button> . </button></li>
                         <li><button> = </button></li>
                     </ul>
-                    <ul class = buttNums>
-                        <li><button> 1 </button></li>
+                    <ul class = "buttNums" id="buttNums">
+                        <input type="button" value=" 1 INPUT" onclick=" display.value += '1 INPUT' " id="oneInput">    
+                        <li><input type="button" value=" 1 LI BUTTON INPUT" onclick=" display.value += '1 LI BUTTON INPUT' "></li>
+                        <li><button> 1 LI BUTTON </button></li>
                         <li><button> 2 </button></li>
                         <li><button> 3 </button></li>
                         <li><button> 4 </button></li>
@@ -39,6 +42,43 @@
                         <li><button> * </button></li>
                         <li><button> / </button></li>
                     </ul>
+                    <!--YOUTUBED EXAMPLE BELOW-->   
+                    <!-- EXAMPLE CODE <input type="button" value="7" onclick= " display.value += '7' " > -->
+ 
+<!--
+                     <form>
+                        <div class="display">
+                        <input type="text" name = "display">
+                        </div>
+                     </form>
+                     <div>
+                        <ul class="buttWorkers">
+                            <li><input type="button" value=" C " onclick=" display.value += ' C ' "></li>   
+                            <li><input type="button" value="( )" onclick=" display.value += '' "></li>     
+                            <li><input type="button" value=" . " onclick=" display.value += ' . ' "></li>     
+                            <li><input type="button" value=" = " onclick=" display.value += ' = ' "></li>   
+                        </ul>
+                        <div class="buttNums">
+                            <input type="button" value="1" onclick=" display.value +='1' ">
+                            <input type="button" value=" 1" onclick=" display.value += '1' ">    
+                            <li><input type="button" value="2" onclick=" display.value += '2' "></li>     
+                            <li><input type="button" value="3" onclick=" display.value += '3' "></li>     
+                            <li><input type="button" value="4" onclick=" display.value += '4' "></li>     
+                            <li><input type="button" value="5" onclick=" display.value += '5' "></li>     
+                            <li><input type="button" value="6" onclick=" display.value += '6' "></li>     
+                            <li><input type="button" value="7" onclick=" display.value += '7' "></li>     
+                            <li><input type="button" value="8" onclick=" display.value += '8' "></li>     
+                            <li><input type="button" value="9" onclick=" display.value += '9' "></li>     
+                            <li><input type="button" value="0" onclick=" display.value += '0' "></li>    
+                        </div>
+                        <ul class="buttOpps">
+                            <li><input type="button" value="+" onclick=" display.value += '+' "></li>     
+                            <li><input type="button" value="-" onclick=" display.value += '-' "></li>     
+                            <li><input type="button" value="*" onclick=" display.value += '*' "></li> 
+                            <li><input type="button" value="=" onclick=" display.value += '=' "></li>      
+                        </ul> 
+                     </div>
+-->
                 </div> <!--calcButtons END-->
             </div> <!--calculator container END-->
         </div> <!--all-in-one row END -->
@@ -46,3 +86,4 @@
 </body>
 <script type="text/javascript" src="apps.js"></script>
 </html>
+
