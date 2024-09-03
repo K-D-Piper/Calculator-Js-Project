@@ -16,6 +16,7 @@
                 </div>
                 <div class="calcButtons" id="calcButtonsID">
                     <!--Testing Below--> 
+<!--
                    <ul class="buttWorkers">
                         <li><button> C </button></li>
                         <li><button> ( ) </button></li>
@@ -42,10 +43,10 @@
                         <li><button> * </button></li>
                         <li><button> / </button></li>
                     </ul>
+-->
                     <!--YOUTUBED EXAMPLE BELOW-->   
                     <!-- EXAMPLE CODE <input type="button" value="7" onclick= " display.value += '7' " > -->
- 
-<!--
+                     <!--
                      <form>
                         <div class="display">
                         <input type="text" name = "display">
@@ -59,8 +60,8 @@
                             <li><input type="button" value=" = " onclick=" display.value += ' = ' "></li>   
                         </ul>
                         <div class="buttNums">
-                            <input type="button" value="1" onclick=" display.value +='1' ">
-                            <input type="button" value=" 1" onclick=" display.value += '1' ">    
+                                <input type="button" value="1" onclick=" display.value += '1' ">
+                            <li><input type="button" value="1" onclick=" display.value += '1' "></li>    
                             <li><input type="button" value="2" onclick=" display.value += '2' "></li>     
                             <li><input type="button" value="3" onclick=" display.value += '3' "></li>     
                             <li><input type="button" value="4" onclick=" display.value += '4' "></li>     
@@ -78,7 +79,38 @@
                             <li><input type="button" value="=" onclick=" display.value += '=' "></li>      
                         </ul> 
                      </div>
--->
+                    -->
+                     <!--YOUTUBE EXAMPLE END-->
+                     <!--GEEKS EXAMPLE START-->
+                     <table>
+                        <div>
+                            <tr class="buttWorkers">
+                                <td><input type="button" class="worker" value=" C " id="buttClear"></td>   
+                                <td><input type="button" class="worker" value="( )" onclick=" display.value += '' "></td>     
+                                <td><input type="button" class="worker" value=" . " onclick=" display.value += ' . ' "></td>     
+                                <td><input type="button" class="worker" value=" = " id="buttEquals" onclick="solve()"></td>   
+                            </tr>
+                            <tr class="buttNums">
+                                <td><input type="button" class="number" value="1" id="butt1"></td> 
+                                <td><input type="button" class="number" value="1" onclick=" display.value += '1' "></td>        
+                                <td><input type="button" class="number" value="2" onclick=" display.value += '2' "></td>     
+                                <td><input type="button" class="number" value="3" onclick=" display.value += '3' "></td>     
+                                <td><input type="button" class="number" value="4" onclick=" display.value += '4' "></td>     
+                                <td><input type="button" class="number" value="5" onclick=" display.value += '5' "></td>     
+                                <td><input type="button" class="number" value="6" onclick=" display.value += '6' "></td>     
+                                <td><input type="button" class="number" value="7" onclick=" display.value += '7' "></td>     
+                                <td><input type="button" class="number" value="8" onclick=" display.value += '8' "></td>     
+                                <td><input type="button" class="number" value="9" onclick=" display.value += '9' "></td>     
+                                <td><input type="button" class="number" value="0" onclick=" display.value += '0' "></td>    
+                            </tr>
+                            <tr class="buttOpps">
+                                <td><input type="button" class="operator" value="+" onclick=" display.value += '+' "></td>     
+                                <td><input type="button" class="operator" value="-" onclick=" display.value += '-' "></td>     
+                                <td><input type="button" class="operator" value="*" onclick=" display.value += '*' "></td> 
+                                <td><input type="button" class="operator" value="/" onclick=" display.value += '/' "></td>      
+                            </tr> 
+                         </div>
+                     </table>
                 </div> <!--calcButtons END-->
             </div> <!--calculator container END-->
         </div> <!--all-in-one row END -->
